@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /usr/bin/env sh
 #
 # Copyright 2016 Garrett D'Amore <garrett@damore.org>
 #
