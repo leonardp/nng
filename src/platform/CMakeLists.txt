@@ -12,6 +12,7 @@ nng_directory(platform)
 
 add_subdirectory(posix)
 add_subdirectory(windows)
+add_subdirectory(zephyr)
 
 nng_test(platform_test)
 nng_test(resolver_test)

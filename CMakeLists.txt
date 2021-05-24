@@ -232,6 +232,11 @@ elseif (CMAKE_SYSTEM_NAME MATCHES "QNX")
     add_definitions(-DNNG_PLATFORM_QNX)
     set(NNG_PLATFORM_POSIX ON)
 
+elseif (CMAKE_SYSTEM_NAME MATCHES "Zephyr")
+    #add_definitions(-DNNG_PLATFORM_POSIX)
+    add_definitions(-DNNG_PLATFORM_ZEPHYR)
+    set(NNG_PLATFORM_ZEPHYR ON)
+
 else ()
     message(AUTHOR_WARNING "WARNING: This platform may not be supported: ${CMAKE_SYSTEM_NAME}")
     message(AUTHOR_WARNING "${ISSUE_REPORT_MSG}")
